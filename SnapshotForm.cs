@@ -30,17 +30,27 @@ namespace Snapshot_Maker
         {
                 timeBox.Text = DateTime.Now.ToLongTimeString( );
 
-                //Bitmap old = (Bitmap) pictureBox.Image;
-                //pictureBox.Image = bitmap;
-                picCropped.Image = bitmap;
+            //Bitmap old = (Bitmap)pictureBox.Image;
+            //pictureBox.Image = bitmap;
 
-                OriginalImage = bitmap;
-                CroppedImage = (Bitmap)bitmap.Clone();
-                DisplayImage = (Bitmap)CroppedImage.Clone();
-                DisplayGraphics = Graphics.FromImage(DisplayImage);
 
-                picCropped.Image = DisplayImage;
-                picCropped.Visible = true;
+            //picCropped.Image = bitmap;
+
+            //OriginalImage = bitmap;
+            //CroppedImage = (Bitmap)bitmap.Clone();
+            //DisplayImage = (Bitmap)CroppedImage.Clone();
+            //DisplayGraphics = Graphics.FromImage(DisplayImage);
+
+            //picCropped.Image = DisplayImage;
+            //picCropped.Visible = true;
+
+
+
+
+            Bitmap nb = new Bitmap(512, 512);
+            Graphics g = Graphics.FromImage(nb);
+            g.DrawImage(bitmap, -398, -108);
+            picCropped.Image = nb;
             //if ( old != null )
             //{
             //    old.Dispose( );
@@ -167,8 +177,10 @@ namespace Snapshot_Maker
             // Draw the selection area.
             int x = Math.Min(StartPoint.X, EndPoint.X);
             int y = Math.Min(StartPoint.Y, EndPoint.Y);
+            Console.WriteLine(" x,y : {0} {1}", x, y);
             int width = Math.Abs(StartPoint.X - EndPoint.X);
             int height = Math.Abs(StartPoint.Y - EndPoint.Y);
+            Console.WriteLine(" w,h : {0} {1}", width,height);
             DisplayGraphics.DrawRectangle(Pens.Red, x, y, width, height);
             picCropped.Refresh();
         }
@@ -223,6 +235,11 @@ namespace Snapshot_Maker
                     throw new NotSupportedException(
                         "Unknown file extension " + extension);
             }
+        }
+
+        private void SnapshotForm_SizeChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(this.Size);
         }
 
         // Load the image into a Bitmap, clone it, and

@@ -86,7 +86,7 @@
             this.picCropped.Location = new System.Drawing.Point(13, 48);
             this.picCropped.Margin = new System.Windows.Forms.Padding(4);
             this.picCropped.Name = "picCropped";
-            this.picCropped.Size = new System.Drawing.Size(579, 363);
+            this.picCropped.Size = new System.Drawing.Size(512, 512);
             this.picCropped.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picCropped.TabIndex = 4;
             this.picCropped.TabStop = false;
@@ -96,11 +96,11 @@
             // 
             // Reset
             // 
-            this.Reset.Location = new System.Drawing.Point(650, 12);
+            this.Reset.Location = new System.Drawing.Point(469, 10);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(123, 30);
             this.Reset.TabIndex = 5;
-            this.Reset.Text = "button1";
+            this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.Click += new System.EventHandler(this.mnuPictureReset_Click);
             // 
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 423);
+            this.ClientSize = new System.Drawing.Size(703, 693);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.picCropped);
             this.Controls.Add(this.timeBox);
@@ -116,7 +116,9 @@
             this.Controls.Add(this.saveButton);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SnapshotForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Snapshot";
+            this.SizeChanged += new System.EventHandler(this.SnapshotForm_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.picCropped)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

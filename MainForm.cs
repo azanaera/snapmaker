@@ -103,14 +103,22 @@ namespace Snapshot_Maker
                 
                 foreach (VideoCapabilities capabilty in videoCapabilities)
                 {
-                    videoResolutionsCombo.Items.Add(string.Format("{0} x {1}",
-                        capabilty.FrameSize.Width, capabilty.FrameSize.Height));
+                    if (capabilty.FrameSize.Width == 640 && capabilty.FrameSize.Height == 480)
+                    {
+                        videoResolutionsCombo.Items.Add(string.Format("{0} x {1}",
+                            capabilty.FrameSize.Width, capabilty.FrameSize.Height));
+                    break;
                 }
+            }
 
                 foreach ( VideoCapabilities capabilty in snapshotCapabilities )
                 {
-                    snapshotResolutionsCombo.Items.Add( string.Format( "{0} x {1}",
-                        capabilty.FrameSize.Width, capabilty.FrameSize.Height ) );
+                    if (capabilty.FrameSize.Width == 640 && capabilty.FrameSize.Height == 480)
+                    {
+                        snapshotResolutionsCombo.Items.Add(string.Format("{0} x {1}",
+                        capabilty.FrameSize.Width, capabilty.FrameSize.Height));
+                        break;
+                    }
                 }
 
                 if ( videoCapabilities.Length == 0 )
@@ -192,6 +200,7 @@ namespace Snapshot_Maker
         // New snapshot frame is available
         private void videoDevice_SnapshotFrame( object sender, NewFrameEventArgs eventArgs )
         {
+            Console.WriteLine("eto b un");
             Console.WriteLine( eventArgs.Frame.Size );
 
             ShowSnapshot( (Bitmap) eventArgs.Frame.Clone( ) );
