@@ -1,0 +1,23 @@
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\Snapshot Maker.exe
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\Snapshot Maker.pdb
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Controls.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Imaging.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Math.dll
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Controls.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Imaging.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\bin\Debug\AForge.Math.xml
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.MainForm.resources
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.Properties.Resources.resources
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.SnapshotForm.resources
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.csproj.GenerateResource.cache
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.csproj.CoreCompileInputs.cache
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.csproj.CopyComplete
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.exe
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.pdb
+C:\Users\Era\Desktop\aforge\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.csprojAssemblyReference.cache
